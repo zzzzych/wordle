@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Wordle(Make javascript)</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Wordle</h1>
+      </header>
+      <div class="board">
+        <div class="board-line">
+          <input
+            type="text"
+            class="input"
+            oninput="onlyEng(this)"
+            maxlength="1"
+          />
+          <input
+            type="text"
+            class="input"
+            oninput="onlyEng(this)"
+            maxlength="1"
+          />
+          <input
+            type="text"
+            class="input"
+            oninput="onlyEng(this)"
+            maxlength="1"
+          />
+          <input
+            type="text"
+            class="input"
+            oninput="onlyEng(this)"
+            maxlength="1"
+          />
+          <input
+            type="text"
+            class="input"
+            oninput="onlyEng(this)"
+            maxlength="1"
+          />
+        </div>
+        <div class="board-line two">
+          <input type="text" maxlength="1" oninput="onlyEng(this)" />
+          <input type="text" maxlength="1" oninput="onlyEng(this)" />
+          <input type="text" maxlength="1" oninput="onlyEng(this)" />
+          <input type="text" maxlength="1" oninput="onlyEng(this)" />
+          <input type="text" maxlength="1" oninput="onlyEng(this)" />
+        </div>
+        <div class="board-line three">
+          <input type="text" maxlength="1" oninput="onlyEng(this)" />
+          <input type="text" maxlength="1" oninput="onlyEng(this)" />
+          <input type="text" maxlength="1" oninput="onlyEng(this)" />
+          <input type="text" maxlength="1" oninput="onlyEng(this)" />
+          <input type="text" maxlength="1" oninput="onlyEng(this)" />
+        </div>
+        <div class="board-line four">
+          <input type="text" maxlength="1" oninput="onlyEng(this)" />
+          <input type="text" maxlength="1" oninput="onlyEng(this)" />
+          <input type="text" maxlength="1" oninput="onlyEng(this)" />
+          <input type="text" maxlength="1" oninput="onlyEng(this)" />
+          <input type="text" maxlength="1" oninput="onlyEng(this)" />
+        </div>
+        <div class="board-line five">
+          <input type="text" maxlength="1" oninput="onlyEng(this)" />
+          <input type="text" maxlength="1" oninput="onlyEng(this)" />
+          <input type="text" maxlength="1" oninput="onlyEng(this)" />
+          <input type="text" maxlength="1" oninput="onlyEng(this)" />
+          <input type="text" maxlength="1" oninput="onlyEng(this)" />
+        </div>
+      </div>
+      <button type="button" class="reset">RESET</button>
+    </div>
+    <script src="./index.js"></script>
+    <script>
+      function onlyEng(e) {
+        e.value = e.value.replace(/[^A-Za-z]/gi, "");
+      }
+    </script>
+  </body>
+</html>
